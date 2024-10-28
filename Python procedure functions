@@ -1,0 +1,27 @@
+def joke1():
+    print("Why did the scarecrow win an award? Because he was outstanding in his field!")
+def joke2():
+    print("What do you call fake spaghetti? An impasta!")
+def joke3():
+    print("Why did the math book look sad? It had too many problems!")
+
+joke = input("Enter 1 for joke 1, enter 2 for joke 2 and enter 3 for joke 3")
+
+if joke == "1":
+    joke1()
+elif joke == "2":
+    joke2()
+elif joke == "3":
+    joke3()
+else:
+    print("Invalid resposne")
+    
+
+Parameter_passing = "Having parameters in a function and reeiving output paramters"
+
+def celsius_to_fahrenheit(celsius):
+    farenheit = celsius*9/5+32
+    return farenheit
+
+temp = input("ENter a tmeperaturei n celsius: ")
+print("It is", celsius_to_fahrenheit(temp), "in farenheit.")
